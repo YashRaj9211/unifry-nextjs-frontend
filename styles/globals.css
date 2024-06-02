@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-
 @font-face {
   font-family: 'Clash';
   src: url("../public/clash-display/ClashDisplayExtralight.otf") format('opentype');
@@ -73,5 +72,13 @@
 
   .faqtitle-class {
     @apply text-2xl font-semibold;
+  }
+
+  .footerhead-class{
+    @apply text-3xl font-medium
+  }
+
+  .footerbase-class{
+    @apply text-base font-medium
   }
 }

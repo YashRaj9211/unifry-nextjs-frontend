@@ -13,7 +13,7 @@ const Advantages = () => {
   return (
     <div>
       <section className="advantages py-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen items-center  md:py-4">
+        <div className="items-center grid grid-cols-1 md:grid-cols-2 md:h-screen">
           <div className="p-4 md:p-5">
             <div className="title-class md:mb-2">ADVANTAGES</div>
             <p className="heading-class md:mb-4">Why Choose Uifry?</p>
@@ -28,16 +28,16 @@ const Advantages = () => {
             </p>
           </div>
 
-          <div className="flex justify-center items-center relative">
-            <Image src={iPhoneFront1} alt="" className="absolute z-20 min-w-60  translate-x-24" />
+          <div className="hidden md:flex justify-center items-center relative">
+            <Image src={iPhoneFront1} alt="" className="absolute z-20 min-w-60  translate-x-24 translate-y-10" />
             <Image src={ellipse} alt="" className="absolute z-10" />
             <Image src={gradient} alt="" className="absolute -top-36 -left-14 -z-20" />
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen items-center p-4 md:p-0">
-          <div className="flex justify-center items-center p-4 relative ">
-            <Image src={iPhoneFront2} alt="" className="absolute z-40 min-w-60" />
+        <div className="items-center grid grid-cols-1 md:grid-cols-2 md:h-screen">
+          <div className="hidden md:flex justify-center items-center relative">
+            <Image src={iPhoneFront2} alt="" className="absolute z-40 min-w-60 translate-y-10" />
             {/* <Image src={card} alt="" className="w-1/2 absolute z-50 -top-40" /> */}
             <Image src={ellipse} alt="" className="absolute z-10 -left-16" />
             <Image src={gradient} alt="" className="absolute -top-24 -z-20" />

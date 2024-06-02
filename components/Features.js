@@ -11,7 +11,7 @@ const Features = () => {
   return (
     <div className='h-fit py-16'>
       <section className="features grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen md:p-0">
-        <div className="flex justify-center items-center p-4 relative md:p-0">
+        <div className="hidden sm:flex justify-center items-center relative p-4 md:p-0">
           <Image src={iPhoneImage} alt="iPhone 13 Pro" className="absolute z-50 min-w-60 top-0"/>
           <Image src={ellipseImage} alt="Ellipse" className="absolute z-10 -left-16"/>
           <Image src={gradientImage} alt="Gradient" className="absolute top-0 -left-28 -z-20"/>

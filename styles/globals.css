@@ -2,32 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+@font-face {
+  font-family: 'Clash';
+  src: url("../public/clash-display/ClashDisplayExtralight.otf") format('opentype');
+  font-weight: 200;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: 'Clash';
+  src: url('../public/clash-display/ClashDisplayLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: 'Clash';
+  src: url('../public/clash-display/ClashDisplayRegular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash';
+  src: url("../public/clash-display/ClashDisplayMedium.otf") format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash';
+  src: url('../public/clash-display/ClashDisplaySemibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash';
+  src: url("../public/clash-display/ClashDisplayBold.otf") format('opentype');
+  font-weight: 700;
+  font-style: normal;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .title-class {
+    @apply text-lg font-medium text-customOrange;
+  }
+
+  .heading-class {
+    @apply text-5xl font-bold;
+  }
+
+  .subheading-class {
+    @apply text-lg font-semibold;
+  }
+
+  .subheading2-class {
+    @apply text-custom font-semibold;
+  }
+
+  .text-class {
+    @apply text-lg font-medium text-gray-500;
+  }
+
+  .faqtext-class {
+    @apply text-lg font-medium;
+  }
+
+  .faqtitle-class {
+    @apply text-2xl font-semibold;
   }
 }

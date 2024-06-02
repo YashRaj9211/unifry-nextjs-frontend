@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        customOrange: '#FF5555',
+      },
+      fontFamily: {
+        clash: ['Clash', 'sans-serif'],
+      },
+      fontSize: {
+        'custom': '1.75rem', // Add custom font size here
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

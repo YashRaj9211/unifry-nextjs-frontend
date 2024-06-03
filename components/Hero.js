@@ -3,8 +3,8 @@ import Image from "next/image";
 
 import Iphone1 from "../public/assets/iPhone-13-Pro-Front-1.png"
 import Iphone2 from "../public/assets/iPhone-13-Pro-Front-2.png"
-import Gradient from "../public/assets/gradient.png"
-import Ellipse from "../public/assets/ellipse.png"
+import Gradient from "../public/assets/gradientsvg.svg"
+import Ellipse from "../public/assets/ellipse.svg"
 import HeroBanner from "../public/assets/banner.svg"
 import RightArrow from "../public/assets/right-arrow.svg"
 import PlayIcon from "../public/assets/play_circle_24dp_FILL0_wght400_GRAD0_opsz24.svg"

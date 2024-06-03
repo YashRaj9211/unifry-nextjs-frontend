@@ -11,8 +11,8 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 // Images
 import iPhoneImage from '../public/assets/iPhone-13-Pro-Front-1.png';
-import ellipseImage from '../public/assets/ellipse.png';
-import gradientImage from '../public/assets/gradient.png';
+import ellipseImage from '../public/assets/ellipse.svg';
+import gradientImage from '../public/assets/gradientsvg.svg';
 import hexIcon from '../public/assets/Icon.svg';
 import startIcon from "../public/assets/star-05.svg"
 import cubeIcon from "../public/assets/cube-04.svg"

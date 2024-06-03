@@ -2,8 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import iPhoneFront1 from '../public/assets/iPhone-13-Pro-Front-1.png';
 import iPhoneFront2 from '../public/assets/iPhone-13-Pro-Front-2.png';
-import ellipse from '../public/assets/ellipse.png';
-import gradient from '../public/assets/gradient.png';
+import ellipse from '../public/assets/ellipse.svg';
+import gradient from '../public/assets/gradientsvg.svg';
 import bell from '../public/assets/bell-02.svg'
 import startWhite from "../public/assets/star-06.svg"
 

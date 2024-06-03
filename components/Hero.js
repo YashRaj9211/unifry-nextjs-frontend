@@ -5,14 +5,14 @@ import Iphone1 from "../public/assets/iPhone-13-Pro-Front-1.png"
 import Iphone2 from "../public/assets/iPhone-13-Pro-Front-2.png"
 import Gradient from "../public/assets/gradient.png"
 import Ellipse from "../public/assets/ellipse.png"
-import HeroBanner from "../public/assets/hero-banner.png"
+import HeroBanner from "../public/assets/banner.svg"
 import RightArrow from "../public/assets/right-arrow.svg"
 import PlayIcon from "../public/assets/play_circle_24dp_FILL0_wght400_GRAD0_opsz24.svg"
 import Stars from "../public/assets/twinkle-starts.svg"
 
 const Hero = () => {
     return (
-        <section className="grid grid-cols-1 md:grid-cols-5 gap-2 h-full py-4 md:p-0 mb-20 font-medium relative">
+        <section className="grid grid-cols-1 mb-20 md:grid-cols-5 gap-2 py-4 md:p-0 font-medium relative">
             <div className="col-span-3 flex flex-col justify-center p-4 md:p-0 translate-y-24">
                 <p className="text-3xl md:text-6xl font-bold mb-4">Make The Best Financial Decisions</p>
                 <p className="text-base text-gray-500 font-medium md:text-lg mb-6">Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet
@@ -31,15 +31,15 @@ const Hero = () => {
             <div className="hidden md:flex md:col-span-2 justify-center items-center relative">
                 <Image
                     src={Iphone2}
-                    className="absolute min-w-60 -rotate-[16deg] z-30 right-10 -top-14" />
-                <Image src={Iphone1} className="absolute min-w-60 -rotate-[16deg] z-20 -right-20 top-0" />
-                <Image src={Iphone2} className="absolute min-w-60 -rotate-[16deg] z-10 -right-48 -bottom-10" />
-                <Image src={Gradient} className="absolute  -bottom-20 right-16" />
-                <Image src={Ellipse} className="absolute scale-125 top-0 right-4" />
-                <Image src={Stars} className="z-30 w-1/12 -translate-x-32 translate-y-56" />
+                    className="absolute min-w-60 -rotate-[16deg] z-30 -translate-y-14  -translate-x-10" />
+                <Image src={Iphone1} className="block absolute min-w-60 -rotate-[16deg] z-20 translate-x-20" />
+                <Image src={Iphone2} className="block absolute min-w-60 -rotate-[16deg] z-10 translate-x-48 translate-y-10" />
+                <Image src={Gradient} className="block absolute  -bottom-20 right-16" />
+                <Image src={Ellipse} className="block absolute scale-125 top-0 right-4" />
+                <Image src={Stars} className="block z-30 w-1/12 -translate-x-32 translate-y-56" />
             </div>
-            <Image src={Stars} className="absolute z-30 w-14 -top-10 -right-14" />
-            <Image src={Stars} className="absolute z-30 w-14 bottom-36 left-10" />
+            <Image src={Stars} className="absolute z-30 w-14 -top-10 -right-14 hidden md:block" />
+            <Image src={Stars} className="absolute z-30 w-14 bottom-36 left-10 hidden md:block" />
         </section>
     );
 }

@@ -81,5 +81,9 @@
   .footerbase-class{
     @apply text-base font-medium
   }
+
+  .footerhover-class{
+    @apply mb-4 duration-300 hover:text-customOrange cursor-pointer
+  }
 }
 

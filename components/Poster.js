@@ -6,9 +6,9 @@ import Gradient from "../public/assets/gradient.png"
 
 const Poster = () => {
   return (
-    <div className='h-screen flex justify-center items-center relative'>
+    <div className='h-fit mb-20 md:h-screen flex justify-center items-center relative'>
         <Image src={PosterImg}/>
-        <Image src={Gradient} className='absolute -z-10 -top-14 -left-60'/>
+        <Image src={Gradient} className='absolute -z-10 -translate-y-36 -translate-x-96'/>
     </div>
   )
 }

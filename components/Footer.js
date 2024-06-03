@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 
-import Logo from "../public/assets/Frame.png";
-import Mail from "../public/assets/mail.png";
-import Phone from "../public/assets/phone.png";
+import Logo from "../public/assets/Logo.svg";
+import Mail from "../public/assets/Vector.svg";
+import Phone from "../public/assets/phone.svg";
 
 const Footer = () => {
+  const [isOpen, setIsOpen] = useState({
+    links: false,
+    legal: false,
+    product: false,
+    // newsletter: false
+  });
+
+  const toggleDropdown = (section) => {
+    setIsOpen(prevState => ({
+      ...prevState,
+      [section]: !prevState[section]
+    }));
+  };
+
   return (
     <footer className='flex flex-col md:flex-row w-full justify-between'>
       <div className='flex flex-col mb-4 md:mb-0'>
@@ -26,41 +40,62 @@ const Footer = () => {
       </div>
 
       <div className='mb-4 md:mb-0'>
-        <p className='footerhead-class mb-4'>Links</p>
-        <ul className='footerbase-class'>
-          <li className='mb-4'>Home</li>
-          <li className='mb-4'>About Us</li>
-          <li className='mb-4'>Bookings</li>
-          <li className='mb-4'>Blog</li>
+        <p 
+          className='footerhead-class mb-4 cursor-pointer md:cursor-default' 
+          onClick={() => toggleDropdown('links')}
+        >
+          Links
+        </p>
+        <ul className={`footerbase-class ${isOpen.links ? '' : 'hidden'} md:block`}>
+          <li className='footerhover-class'>Home</li>
+          <li className='footerhover-class'>About Us</li>
+          <li className='footerhover-class'>Bookings</li>
+          <li className='footerhover-class'>Blog</li>
         </ul>
       </div>
 
       <div className='mb-4 md:mb-0'>
-        <p className='footerhead-class mb-4'>Legal</p>
-        <ul className='footerbase-class'>
-          <li className='mb-4'>Terms of Use</li>
-          <li className='mb-4'>Privacy Policy</li>
-          <li className='mb-4'>Cookie Policy</li>
+        <p 
+          className='footerhead-class mb-4 cursor-pointer md:cursor-default' 
+          onClick={() => toggleDropdown('legal')}
+        >
+          Legal
+        </p>
+        <ul className={`footerbase-class ${isOpen.legal ? '' : 'hidden'} md:block`}>
+          <li className='footerhover-class'>Terms of Use</li>
+          <li className='footerhover-class'>Privacy Policy</li>
+          <li className='footerhover-class'>Cookie Policy</li>
         </ul>
       </div>
 
       <div className='mb-4 md:mb-0'>
-        <p className='footerhead-class mb-4'>Product</p>
-        <ul className='footerbase-class'>
-          <li className='mb-4'>Take Tour</li>
-          <li className='mb-4'>Live Chat</li>
-          <li className='mb-4'>Reviews</li>
+        <p 
+          className='footerhead-class mb-4 cursor-pointer md:cursor-default' 
+          onClick={() => toggleDropdown('product')}
+        >
+          Product
+        </p>
+        <ul className={`footerbase-class ${isOpen.product ? '' : 'hidden'} md:block`}>
+          <li className='footerhover-class'>Take Tour</li>
+          <li className='footerhover-class'>Live Chat</li>
+          <li className='footerhover-class'>Reviews</li>
         </ul>
       </div>
 
       <div>
-        <p className='footerhead-class mb-4'>Newsletter</p>
-        <p className='footerbase-class mb-4'>Stay Up To Date</p>
-        <div className='w-fit flex'>
-          <input 
-            placeholder='Your email '
-            className='w-44 rounded-md p-2 mr-2'/>
-          <button className='bg-black text-white p-2 rounded-md'>Subscribe</button>
+        <p 
+          className='footerhead-class mb-4 cursor-pointer md:cursor-default' 
+        >
+          Newsletter
+        </p>
+        <div className={`footerbase-class`}>
+          <p className='footerbase-class footerhover-class'>Stay Up To Date</p>
+          <div className='w-fit flex'>
+            <input 
+              placeholder='Your email '
+              className='w-44 rounded-md p-2 mr-2'/>
+            <button className='bg-black text-white p-2 rounded-md'>Subscribe</button>
+          </div>
         </div>
       </div>
     </footer>

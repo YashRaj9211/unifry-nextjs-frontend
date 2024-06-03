@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import GroupImage from "../public/assets/Group 1000002332.png"
-import GroupPeopleImage from "../public/assets/grp-grid-people.png"
+import GroupPeopleImage from "../public/assets/GroupGrid.svg"
 import Gradient from "../public/assets/gradient.png"
 
 const Testimonial = () => {
@@ -13,7 +13,7 @@ const Testimonial = () => {
             <div className='flex flex-col md:flex-row gap-4 justify-center items-center'>
                 <div className='flex-1 relative'>
                     <Image src={GroupImage} className='sm:max-w-md'/>
-                    <Image src={Gradient} className='absolute top-10 -z-10 -left-10'/>
+                    <Image src={Gradient} className='absolute -z-10 -translate-y-96 rotate-45 -translate-x-10 '/>
                 </div>
                 <div className='flex flex-col flex-1 gap-4'>
                     <p className='subheading-class'>The best financial accounting app ever!</p>

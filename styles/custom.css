@@ -44,14 +44,14 @@
 
 .getstart-btn {
 	gap: 0;
-	transition: gap 700ms, padding-right 700ms;
+	transition: gap 500ms, padding-right 500ms;
 }
 
 .getstart-img {
 	opacity: 0;
 	visibility: hidden;
 	width: 0;
-	transition: opacity 700ms, visibility 700ms, width 700ms;
+	transition: opacity 500ms, visibility 500ms, width 500ms;
 }
 
 .getstart-btn:hover .getstart-img {
@@ -64,7 +64,7 @@
 	gap: 8px;
 	padding-right: 8px;
 }
-
+  
 
 @keyframes slide-in {
 	from {

@@ -11,7 +11,7 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
 
   return (
-    <div className={`px-6 py-6 overflow-hidden font-clash md:px-36 mx-auto`}>
+    <div className={`px-6 py-6 overflow-hidden font-clash max-w-screen-2xl md:px-36 mx-auto`}>
       <Navbar/>
       <Hero/>
       <Features/>

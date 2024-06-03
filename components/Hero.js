@@ -31,7 +31,7 @@ const Hero = () => {
             <div className="hidden md:flex md:col-span-2 justify-center items-center relative">
                 <Image
                     src={Iphone2}
-                    className="absolute min-w-60 -rotate-[16deg] z-30 -translate-y-14  -translate-x-10" />
+                    className="absolute min-w-60 -rotate-[16deg] z-30 -translate-y-14  -translate-x-8" />
                 <Image src={Iphone1} className="block absolute min-w-60 -rotate-[16deg] z-20 translate-x-20" />
                 <Image src={Iphone2} className="block absolute min-w-60 -rotate-[16deg] z-10 translate-x-48 translate-y-10" />
                 <Image src={Gradient} className="block absolute translate-y-60" />

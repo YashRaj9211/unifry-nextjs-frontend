@@ -3,6 +3,7 @@
 	transition: all 0.5s;
 	position: relative;
 }
+
 .btn-anim::before {
 	content: '';
 	position: absolute;
@@ -11,13 +12,15 @@
 	width: 100%;
 	height: 100%;
 	z-index: 1;
-    border-radius: 30px;
+	border-radius: 30px;
 	transition: all 0.3s;
 }
+
 .btn-anim:hover::before {
-	opacity: 0 ;
-	transform: scale(0.5,0.5);
+	opacity: 0;
+	transform: scale(0.5, 0.5);
 }
+
 .btn-anim::after {
 	content: '';
 	position: absolute;
@@ -29,20 +32,46 @@
 	opacity: 0;
 	transition: all 0.3s;
 	border: 1px solid rgb(0, 0, 0);
-    border-radius: 6px;
-	transform: scale(1.2,1.2);
-}
-.btn-anim:hover::after {
-	opacity: 1;
-	transform: scale(1,1);
+	border-radius: 6px;
+	transform: scale(1.2, 1.2);
 }
 
+.btn-anim:hover::after {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+
+.getstart-btn {
+	gap: 0;
+	transition: gap 700ms, padding-right 700ms;
+}
+
+.getstart-img {
+	opacity: 0;
+	visibility: hidden;
+	width: 0;
+	transition: opacity 700ms, visibility 700ms, width 700ms;
+}
+
+.getstart-btn:hover .getstart-img {
+	opacity: 1;
+	visibility: visible;
+	width: 24px;
+}
+
+.getstart-btn:hover {
+	gap: 8px;
+	padding-right: 8px;
+}
+
+
 @keyframes slide-in {
-    from {
-      transform: translateX(100vw);
-    }
-    to {
-      transform: translateX(0);
-    }
-  }
-  
+	from {
+		transform: translateX(100vw);
+	}
+
+	to {
+		transform: translateX(0);
+	}
+}

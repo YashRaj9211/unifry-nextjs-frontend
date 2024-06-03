@@ -6,9 +6,9 @@ import Iphone2 from "../public/assets/iPhone-13-Pro-Front-2.png"
 import Gradient from "../public/assets/gradient.png"
 import Ellipse from "../public/assets/ellipse.png"
 import HeroBanner from "../public/assets/hero-banner.png"
-import RightArrow from "../public/assets/right-arrow.png"
-import PlayIcon from "../public/assets/play-button.png"
-import Stars from "../public/assets/twinkle-twinkle-star.png"
+import RightArrow from "../public/assets/right-arrow.svg"
+import PlayIcon from "../public/assets/play_circle_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+import Stars from "../public/assets/twinkle-starts.svg"
 
 const Hero = () => {
     return (
@@ -18,9 +18,9 @@ const Hero = () => {
                 <p className="text-base text-gray-500 font-medium md:text-lg mb-6">Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet
                     faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.</p>
                 <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
-                    <button className="btn-anim flex items-center gap-2 bg-black text-white px-4 py-2 rounded-md">Get Started <span><Image src={RightArrow} /></span></button>
+                    <button className="getstart-btn flex items-center gap-2 bg-black text-white px-4 py-2 rounded-md">Get Started <span><Image src={RightArrow} className="getstart-img"/></span></button>
                     <div className="space-x-2 watch-button hover:z-50">
-                        <button className="flex items-center gap-2 bg-transparent  text-gray-700 px-4 py-2"><span><Image src={PlayIcon} /></span>Watch Video</button>
+                        <button className="flex items-center gap-2 bg-transparent  text-gray-700 px-4 py-2"><span><Image src={PlayIcon}/></span>Watch Video</button>
                     </div>
                 </div>
                 <Image src={Gradient} className="absolute -z-50 w-2/3 translate-x-10 -translate-y-64" />
